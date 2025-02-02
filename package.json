@@ -1,26 +1,39 @@
 {
-  "name": "tamales-monarca",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^2.5.5",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.33",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.37.0",
-    "eslint-config-next": "13.2.4",
-    "framer-motion": "^10.10.0",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.3"
-  }
+    "name": "next-app-template",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbopack",
+        "build": "next build",
+        "start": "next start",
+        "lint": "biome check --write ./",
+        "lint:unsafe": "biome check --write --unsafe ./",
+        "format": "biome format --write ./"
+    },
+    "dependencies": {
+        "@heroui/react": "^2.6.14",
+        "@react-aria/ssr": "3.9.7",
+        "@react-aria/visually-hidden": "3.8.18",
+        "clsx": "2.1.1",
+        "framer-motion": "^12.0.6",
+        "intl-messageformat": "^10.5.0",
+        "lucide-react": "^0.474.0",
+        "next": "15.0.4",
+        "next-themes": "^0.4.4",
+        "react": "18.3.1",
+        "react-dom": "18.3.1"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4",
+        "@react-types/shared": "3.25.0",
+        "@types/node": "20.5.7",
+        "@types/react": "18.3.3",
+        "@types/react-dom": "18.3.0",
+        "autoprefixer": "10.4.19",
+        "postcss": "8.4.49",
+        "tailwind-variants": "0.1.20",
+        "tailwindcss": "3.4.16",
+        "typescript": "5.6.3"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
