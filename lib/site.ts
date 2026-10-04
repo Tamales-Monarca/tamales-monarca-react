@@ -45,11 +45,8 @@ export interface Phone {
 export const site = {
 	name: "Restaurante El Monarca",
 	shortName: "El Monarca",
-	/**
-	 * OWNER TO CONFIRM: production domain. Placeholder until the new domain
-	 * is chosen; used for canonical, Open Graph, sitemap and JSON-LD URLs.
-	 */
-	url: "https://restauranteelmonarca.com",
+	/** Production domain: canonical, Open Graph, sitemap and JSON-LD URLs. */
+	url: "https://elmonarcaemporia.com",
 	locale: { en: "en_US", es: "es_MX" },
 	themeColor: "#E8913A",
 	cuisine: ["Mexican", "Tamales"],
@@ -145,7 +142,7 @@ export const site = {
 	},
 
 	/** Facts that must be confirmed with the owner before launch. */
-	unverified: ["address", "hours", "domain"],
+	unverified: ["address", "hours"],
 } as const;
 
 /** In-page anchor ids. Each section component renders the matching id. */

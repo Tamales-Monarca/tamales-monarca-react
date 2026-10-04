@@ -60,10 +60,10 @@ After you add one, check the new files for `import { cn } from "cn"` and change 
 
 Confirm these with the owner, as listed in `site.unverified`:
 
-- the address and phone numbers
+- the street address
 - the opening hours
-- the domain (`site.url`)
-- the DoorDash store name
-- the menu items marked `uncertain` in `lib/menu.ts`
 
-Real food photos should also replace the placeholder monarch photo in the hero and about sections.
+When online ordering launches, set `links.order` in `lib/site.ts` to turn the
+Order Online buttons back on.
+
+The site is served at https://elmonarcaemporia.com (`site.url`).
