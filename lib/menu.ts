@@ -1,9 +1,8 @@
 /**
  * Restaurante El Monarca: bilingual menu data.
  *
- * Source of truth: the two in-store boards (redesign/IMG_20261004_110846647.jpg
- * and IMG_20261004_110854401.jpg). Only what is on the boards is listed: item
- * names, options and prices. No invented descriptions or dietary badges.
+ * Source of truth: the two in-store menu boards. Only what is on the boards is
+ * listed: item names, options and prices. No invented descriptions or dietary badges.
  * The boards only price tamales; every other item shows "Ask our staff".
  * Most of the main board is in English, so many Spanish names are translations.
  */

@@ -40,7 +40,6 @@ yarn verify   # lint + typecheck
 | `lib/menu.ts` | Bilingual menu data and prices |
 | `lib/i18n.ts`, `components/language-provider.tsx` | EN/ES language state, saved in `localStorage` |
 | `public/` | Logos, favicons, web manifest, OG image, dish photos (`images/dishes`) |
-| `redesign/` | Source logo, menu board photos (source of truth for `lib/menu.ts`) and original dish photos |
 
 ## Editing content
 
