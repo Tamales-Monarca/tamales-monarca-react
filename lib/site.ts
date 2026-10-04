@@ -1,9 +1,5 @@
 /**
  * Restaurante El Monarca: business facts and bilingual site copy.
- * Replaces the old config/translations.ts.
- *
- * NEEDS OWNER CONFIRMATION (see `site.unverified`): the street address comes
- * from 2023 git history.
  */
 
 import type { Localized } from "@/lib/i18n";
@@ -140,9 +136,6 @@ export const site = {
 		mapEmbed:
 			"https://maps.google.com/maps?q=201%20Commercial%20St%2C%20Emporia%2C%20KS%2066801&z=16&output=embed",
 	},
-
-	/** Facts that must be confirmed with the owner before launch. */
-	unverified: ["address"],
 } as const;
 
 /** In-page anchor ids. Each section component renders the matching id. */

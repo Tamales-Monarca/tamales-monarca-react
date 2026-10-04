@@ -56,11 +56,7 @@ npx shadcn@latest add https://cult-ui.com/r/<component>.json
 
 After you add one, check the new files for `import { cn } from "cn"` and change it to `import { cn } from "@/lib/utils"`.
 
-## Before launch
-
-Confirm these with the owner, as listed in `site.unverified`:
-
-- the street address
+## Online ordering
 
 When online ordering launches, set `links.order` in `lib/site.ts` to turn the
 Order Online buttons back on.
