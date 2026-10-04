@@ -20,7 +20,7 @@ const statusCopy = {
 } satisfies Record<string, Localized>;
 
 /**
- * Pill showing "Open now · until 8 PM" or "Closed now · opens 10 AM tomorrow".
+ * Pill showing "Open now · until 8 PM" or "Closed now · opens 8 AM tomorrow".
  * Fixed height so the late-arriving status never shifts layout. Passive
  * display: deliberately not a live region, so it never interrupts
  * screen-reader users on load or when the minute ticks over.

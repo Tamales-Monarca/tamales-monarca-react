@@ -3,7 +3,7 @@
  * Replaces the old config/translations.ts.
  *
  * NEEDS OWNER CONFIRMATION (see `site.unverified`): the street address comes
- * from 2023 git history, and the hours are the old site's.
+ * from 2023 git history.
  */
 
 import type { Localized } from "@/lib/i18n";
@@ -27,7 +27,7 @@ export interface OpeningHours {
 	closes: string;
 	/** Human label, e.g. "Mon – Sun" / "Lun – Dom" */
 	label: Localized;
-	/** Human time range, e.g. "10 AM – 8 PM" */
+	/** Human time range, e.g. "8 AM – 8 PM" */
 	time: Localized;
 }
 
@@ -109,10 +109,10 @@ export const site = {
 				"Saturday",
 				"Sunday",
 			],
-			opens: "10:00",
+			opens: "08:00",
 			closes: "20:00",
 			label: L("Monday – Sunday", "Lunes – Domingo"),
-			time: L("10 AM – 8 PM", "10 a. m. – 8 p. m."),
+			time: L("8 AM – 8 PM", "8 a. m. – 8 p. m."),
 		},
 	] satisfies OpeningHours[],
 
@@ -142,7 +142,7 @@ export const site = {
 	},
 
 	/** Facts that must be confirmed with the owner before launch. */
-	unverified: ["address", "hours"],
+	unverified: ["address"],
 } as const;
 
 /** In-page anchor ids. Each section component renders the matching id. */

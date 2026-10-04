@@ -61,7 +61,6 @@ After you add one, check the new files for `import { cn } from "cn"` and change 
 Confirm these with the owner, as listed in `site.unverified`:
 
 - the street address
-- the opening hours
 
 When online ordering launches, set `links.order` in `lib/site.ts` to turn the
 Order Online buttons back on.
