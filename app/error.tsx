@@ -1,27 +1,20 @@
 "use client";
 
-import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
-export default function Error({
-	error,
+export default function ErrorPage({
 	reset,
 }: {
-	error: Error;
+	error: Error & { digest?: string };
 	reset: () => void;
 }) {
-	useEffect(() => {}, [error]);
-
 	return (
-		<div>
-			<h2>Something went wrong!</h2>
-			<button
-				onClick={
-					// Attempt to recover by trying to re-render the segment
-					() => reset()
-				}
-			>
-				Try again
-			</button>
-		</div>
+		<main className="flex min-h-dvh flex-col items-center justify-center gap-6 bg-background px-6 text-center">
+			<img src="/logo-mark.svg" alt="" width={96} height={96} />
+			<h1 className="font-heading text-3xl">
+				Something went wrong · Algo salió mal
+			</h1>
+			<Button onClick={() => reset()}>Try again · Intentar de nuevo</Button>
+		</main>
 	);
 }

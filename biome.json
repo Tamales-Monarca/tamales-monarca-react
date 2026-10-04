@@ -1,9 +1,28 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-	"files": { "ignoreUnknown": false, "ignore": [] },
-	"formatter": { "enabled": true, "indentStyle": "tab" },
-	"organizeImports": { "enabled": true },
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": [
+			"out/**",
+			".next/**",
+			"node_modules/**",
+			"redesign/**",
+			"next-env.d.ts",
+			"public/**"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"organizeImports": {
+		"enabled": true
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -46,8 +65,12 @@
 				"useHookAtTopLevel": "error",
 				"useJsxKeyInIterable": "error"
 			},
-			"security": { "noDangerouslySetInnerHtmlWithChildren": "error" },
-			"style": { "useBlockStatements": "off" },
+			"security": {
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
+			"style": {
+				"useBlockStatements": "off"
+			},
 			"suspicious": {
 				"noCommentText": "error",
 				"noConsole": "warn",
@@ -71,5 +94,9 @@
 			"**/build"
 		]
 	},
-	"javascript": { "formatter": { "quoteStyle": "double" } }
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	}
 }

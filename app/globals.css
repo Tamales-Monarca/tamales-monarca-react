@@ -1,0 +1,290 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Light-only site: `dark:` never applies (no .dark class is ever set). */
+@custom-variant dark (&:is(.dark *));
+
+/* ------------------------------------------------------------------
+   Restaurante El Monarca — brand theme
+   Palette drawn from the logo: marigold wings, agave leaves,
+   black outlines, plus chile red and warm crema for a Mexican
+   cocina feel. Semantic shadcn tokens live in :root / .dark.
+   ------------------------------------------------------------------ */
+
+@theme inline {
+	/* Fonts (CSS variables are set by next/font in app/layout.tsx) */
+	--font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+	--font-heading: var(--font-fraunces), ui-serif, Georgia, serif;
+	--font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+	--font-script: var(--font-caveat), "Comic Sans MS", cursive;
+
+	/* Semantic shadcn tokens */
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+
+	/* Brand semantic extras */
+	--color-chalkboard: var(--chalkboard);
+	--color-chalkboard-foreground: var(--chalkboard-foreground);
+	--color-chalkboard-muted: var(--chalkboard-muted);
+	--color-highlight: var(--highlight);
+	--color-highlight-foreground: var(--highlight-foreground);
+
+	--radius-sm: calc(var(--radius) * 0.6);
+	--radius-md: calc(var(--radius) * 0.8);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) * 1.4);
+	--radius-2xl: calc(var(--radius) * 1.8);
+	--radius-3xl: calc(var(--radius) * 2.2);
+	--radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Raw brand scales (static; usable as bg-marigold-500, text-agave-700, …) */
+@theme {
+	--color-marigold-50: #fef6ec;
+	--color-marigold-100: #fde9d0;
+	--color-marigold-200: #fad2a1;
+	--color-marigold-300: #f5b872;
+	--color-marigold-400: #efa050; /* logo wing orange */
+	--color-marigold-500: #e8913a; /* primary */
+	--color-marigold-600: #cf7425;
+	--color-marigold-700: #a9581c;
+	--color-marigold-800: #85441a;
+	--color-marigold-900: #6b3818;
+
+	--color-agave-50: #f5f6ee;
+	--color-agave-100: #e8ebd6;
+	--color-agave-200: #d3d9b2;
+	--color-agave-300: #b9c289;
+	--color-agave-400: #9fa867; /* logo agave */
+	--color-agave-500: #7e8a4a; /* secondary */
+	--color-agave-600: #66703a;
+	--color-agave-700: #50582f;
+	--color-agave-800: #414729;
+	--color-agave-900: #373c25;
+
+	--color-chile-50: #fcf1ee;
+	--color-chile-100: #f8dfd8;
+	--color-chile-200: #f1bdb0;
+	--color-chile-300: #e79380;
+	--color-chile-400: #d2603f;
+	--color-chile-500: #c24e31;
+	--color-chile-600: #b5432a; /* accent */
+	--color-chile-700: #943522;
+	--color-chile-800: #7a2e20;
+	--color-chile-900: #652a1f;
+
+	--color-crema-50: #fffdf9;
+	--color-crema-100: #fbf7f0; /* page background */
+	--color-crema-200: #f6efe3;
+	--color-crema-300: #f1e7d6;
+	--color-crema-400: #e6d9c4;
+	--color-crema-500: #d4c3a8;
+
+	--color-carbon-400: #b8ab9b;
+	--color-carbon-500: #6b5e52;
+	--color-carbon-600: #4a3f35;
+	--color-carbon-700: #3a3027;
+	--color-carbon-800: #2a231c;
+	--color-carbon-900: #1c1714;
+	--color-carbon-950: #17130f;
+
+	--color-pizarron: #1f1b18; /* in-store chalkboard */
+}
+
+:root {
+	--radius: 0.75rem;
+
+	--background: #fbf7f0;
+	--foreground: #1c1714;
+	--card: #fffdf9;
+	--card-foreground: #1c1714;
+	--popover: #fffdf9;
+	--popover-foreground: #1c1714;
+	--primary: #e8913a;
+	--primary-foreground: #1c1714;
+	--secondary: #66703a; /* agave-600: 4.99:1 with crema text */
+	--secondary-foreground: #fbf7f0;
+	--muted: #f1e7d6;
+	--muted-foreground: #6b5e52;
+	--accent: #b5432a;
+	--accent-foreground: #fbf7f0;
+	--destructive: #b42318;
+	--border: #e6d9c4;
+	--input: #e6d9c4;
+	--ring: #a9581c; /* marigold-700: 4.8:1 on crema (WCAG 1.4.11) */
+
+	--chalkboard: #1f1b18;
+	--chalkboard-foreground: #f6efe3;
+	--chalkboard-muted: #b8ab9b;
+	--highlight: #efa050;
+	--highlight-foreground: #1c1714;
+
+	--chart-1: #e8913a;
+	--chart-2: #66703a;
+	--chart-3: #b5432a;
+	--chart-4: #efa050;
+	--chart-5: #6b5e52;
+
+	--sidebar: #f6efe3;
+	--sidebar-foreground: #1c1714;
+	--sidebar-primary: #e8913a;
+	--sidebar-primary-foreground: #1c1714;
+	--sidebar-accent: #f1e7d6;
+	--sidebar-accent-foreground: #1c1714;
+	--sidebar-border: #e6d9c4;
+	--sidebar-ring: #a9581c;
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring;
+	}
+	html {
+		@apply scroll-smooth font-sans;
+		scroll-padding-top: 5rem; /* sticky header offset for #anchors */
+	}
+	body {
+		@apply bg-background text-foreground antialiased;
+		font-feature-settings: "kern", "liga";
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply font-heading tracking-tight text-balance;
+	}
+	::selection {
+		@apply bg-marigold-200 text-carbon-900;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}
+
+@layer utilities {
+	/* Section rhythm */
+	.section-y {
+		@apply py-20 md:py-28;
+	}
+	/* Subtle paper grain for crema surfaces */
+	.paper-grain {
+		background-image: radial-gradient(
+				rgb(28 23 20 / 0.035) 1px,
+				transparent 1px
+			), radial-gradient(rgb(28 23 20 / 0.025) 1px, transparent 1px);
+		background-size: 3px 3px, 7px 7px;
+		background-position: 0 0, 1px 2px;
+	}
+	/* Dark surfaces keep the bright marigold focus ring (8:1 on pizarrón) */
+	.on-chalkboard {
+		--ring: #efa050;
+	}
+	/* Chalkboard (pizarrón) surface echoing the in-store menu boards */
+	.chalkboard {
+		--ring: #efa050;
+		@apply bg-chalkboard text-chalkboard-foreground;
+		background-image: radial-gradient(
+				ellipse at 30% 20%,
+				rgb(255 255 255 / 0.05),
+				transparent 60%
+			),
+			radial-gradient(
+				ellipse at 80% 90%,
+				rgb(255 255 255 / 0.035),
+				transparent 55%
+			);
+	}
+	/* Papel picado style scalloped top edge */
+	.papel-edge {
+		mask-image: radial-gradient(circle at 12px 0, transparent 11px, #000 12px);
+		mask-size: 24px 100%;
+		mask-repeat: repeat-x;
+	}
+}
+
+/* Hero butterflies: CSS-only drift + wing flap (transform only, no filter). */
+@keyframes butterfly-drift {
+	0%,
+	100% {
+		transform: translate(0, 0) rotate(var(--b-rotate));
+	}
+	33% {
+		transform: translate(var(--b-dx), var(--b-dy))
+			rotate(calc(var(--b-rotate) + 10deg));
+	}
+	66% {
+		transform: translate(calc(var(--b-dx) * 0.4), calc(var(--b-dy) * -0.5))
+			rotate(calc(var(--b-rotate) - 8deg));
+	}
+}
+
+@keyframes butterfly-flap {
+	0%,
+	62%,
+	100% {
+		transform: scaleX(1);
+	}
+	75% {
+		transform: scaleX(0.55);
+	}
+	88% {
+		transform: scaleX(1);
+	}
+}
+
+.butterfly {
+	transform: rotate(var(--b-rotate));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.butterfly {
+		animation: butterfly-drift var(--b-dur) ease-in-out var(--b-delay) infinite;
+		will-change: transform;
+	}
+	.butterfly-wing {
+		animation: butterfly-flap var(--b-flap) ease-in-out infinite;
+	}
+	[data-paused] .butterfly,
+	[data-paused] .butterfly-wing {
+		animation-play-state: paused;
+	}
+}

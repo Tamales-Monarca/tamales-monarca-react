@@ -1,0 +1,136 @@
+{
+  "source": [
+    "redesign/IMG_20261004_110846647.jpg (main board: Breakfast / Lunch & Dinner)",
+    "redesign/IMG_20261004_110854401.jpg (tamales & gorditas board)"
+  ],
+  "categories": [
+    {
+      "id": "breakfast",
+      "nameEs": "Desayuno (Todo el Día)",
+      "nameEn": "Breakfast (All Day)",
+      "noteEs": "Desayuno servido todo el día.",
+      "noteEn": "Breakfast served all day. The board lists no prices except for breakfast tamales.",
+      "items": [
+        { "nameEs": "Huevos Rancheros", "nameEn": "Huevos Rancheros", "descriptionEs": "Huevos estrellados sobre tortilla bañados en salsa ranchera.", "descriptionEn": "Fried eggs over a tortilla, smothered in ranchero salsa.", "price": "", "options": [] },
+        { "nameEs": "Chilaquiles", "nameEn": "Chilaquiles", "descriptionEs": "Totopos bañados en salsa. Estilo Monarca o Chile Verde.", "descriptionEn": "Tortilla chips simmered in salsa. Monarca style or Green Chili.", "price": "", "options": ["Monarca", "Green Chili / Chile Verde"] },
+        { "nameEs": "Burritos de Desayuno", "nameEn": "Breakfast Burritos", "descriptionEs": "Con jamón o tocino.", "descriptionEn": "With ham or bacon.", "price": "", "options": ["Ham / Jamón", "Bacon / Tocino"] },
+        { "nameEs": "Tamales de Desayuno", "nameEn": "Breakfast Tamales", "descriptionEs": "Puerco, pollo, queso con jalapeño o a la mexicana (sin carne).", "descriptionEn": "Pork, chicken, cheese & jalapeño, or a la Mexicana (no meat).", "price": "1 pc × 3.00 / 6 pc × 16.00 / 12 pc × 28.00", "options": ["Pork / Puerco", "Chicken / Pollo", "Cheese & Jalapeño / Queso y Jalapeño", "A la Mexicana (no meat / sin carne)", "1 pc - $3.00", "6 pc - $16.00", "12 pc - $28.00"], "uncertain": true },
+        { "nameEs": "Chicharrón en salsa verde", "nameEn": "Chicharrón in Green Salsa", "descriptionEs": "Chicharrón guisado en salsa verde.", "descriptionEn": "Pork rinds stewed in tangy green tomatillo salsa.", "price": "", "options": [] },
+        { "nameEs": "Machaca", "nameEn": "Machaca", "descriptionEs": "Carne seca deshebrada guisada con huevo.", "descriptionEn": "Shredded dried beef scrambled with eggs.", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "lunch-dinner",
+      "nameEs": "Comida y Cena",
+      "nameEn": "Lunch & Dinner",
+      "noteEs": "",
+      "noteEn": "The board lists no prices.",
+      "items": [
+        { "nameEs": "Chiles Rellenos", "nameEn": "Chiles Rellenos", "descriptionEs": "Chiles poblanos rellenos y capeados.", "descriptionEn": "Battered, stuffed poblano peppers.", "price": "", "options": [] },
+        { "nameEs": "Enchiladas", "nameEn": "Enchiladas", "descriptionEs": "De pollo o queso; rojas o verdes.", "descriptionEn": "Chicken or cheese, with red (rojas) or green (verdes) sauce.", "price": "", "options": ["Chicken / Pollo", "Cheese / Queso", "Rojas (red sauce)", "Verdes (green sauce)"] },
+        { "nameEs": "Plato de Adobo", "nameEn": "Adobo Plate", "descriptionEs": "Carne en adobo de chiles secos.", "descriptionEn": "Meat braised in a dried-chile adobo sauce.", "price": "", "options": [] },
+        { "nameEs": "Plato de Tamales", "nameEn": "Tamale Plate", "descriptionEs": "Tamales servidos como platillo.", "descriptionEn": "Tamales served as a plate.", "price": "", "options": [] },
+        { "nameEs": "Carne Asada", "nameEn": "Carne Asada", "descriptionEs": "Carne de res asada.", "descriptionEn": "Grilled steak.", "price": "", "options": [] },
+        { "nameEs": "Fajitas", "nameEn": "Fajitas", "descriptionEs": "De puerco, pollo o mixtas.", "descriptionEn": "Pork, chicken, or mixed.", "price": "", "options": ["Pork / Puerco", "Chicken / Pollo", "Mixed / Mixtas"] },
+        { "nameEs": "Lengua en Salsa verde", "nameEn": "Beef Tongue in Green Salsa", "descriptionEs": "Lengua de res guisada en salsa verde.", "descriptionEn": "Tender beef tongue stewed in green salsa.", "price": "", "options": [] },
+        { "nameEs": "Papas con Asada", "nameEn": "Asada Fries", "descriptionEs": "Papas fritas cubiertas con carne asada.", "descriptionEn": "Fries topped with grilled steak.", "price": "", "options": [] },
+        { "nameEs": "Quesadillas Sincronizadas", "nameEn": "Quesadillas Sincronizadas", "descriptionEs": "De pollo, jamón o asada.", "descriptionEn": "Stacked quesadillas with chicken, ham, or asada.", "price": "", "options": ["Chicken / Pollo", "Ham / Jamón", "Asada"] },
+        { "nameEs": "Molcajete", "nameEn": "Molcajete", "descriptionEs": "Platillo servido en molcajete de piedra.", "descriptionEn": "Hearty dish served in a volcanic-stone molcajete.", "price": "", "options": [] },
+        { "nameEs": "Hamburguesa", "nameEn": "Hamburger", "descriptionEs": "Hamburguesa.", "descriptionEn": "Burger.", "price": "", "options": [] },
+        { "nameEs": "Monarca Especial", "nameEn": "Monarca Special", "descriptionEs": "Especialidad de la casa.", "descriptionEn": "House specialty.", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "tacos",
+      "nameEs": "Tacos",
+      "nameEn": "Tacos",
+      "noteEs": "",
+      "noteEn": "",
+      "items": [
+        { "nameEs": "Lengua", "nameEn": "Lengua (Beef Tongue)", "price": "", "options": [] },
+        { "nameEs": "Asada", "nameEn": "Asada (Grilled Steak)", "price": "", "options": [] },
+        { "nameEs": "Puerco", "nameEn": "Pork", "price": "", "options": [] },
+        { "nameEs": "Chicharrón", "nameEn": "Chicharrón (Pork Rinds)", "price": "", "options": [] },
+        { "nameEs": "Quesabirria", "nameEn": "Quesabirria", "descriptionEs": "Tacos de birria con queso.", "descriptionEn": "Cheesy birria tacos.", "price": "", "options": [] },
+        { "nameEs": "Quesatacos", "nameEn": "Quesatacos", "descriptionEs": "Tacos con queso, de pollo o asada.", "descriptionEn": "Cheese tacos with chicken or asada.", "price": "", "options": ["Chicken / Pollo", "Asada"] },
+        { "nameEs": "Birria", "nameEn": "Birria", "descriptionEs": "Carne guisada en consomé de chiles.", "descriptionEn": "Slow-braised meat in a rich chile consommé.", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "tortas",
+      "nameEs": "Tortas",
+      "nameEn": "Tortas",
+      "noteEs": "",
+      "noteEn": "Mexican sandwiches.",
+      "items": [
+        { "nameEs": "Jamón", "nameEn": "Ham", "price": "", "options": [] },
+        { "nameEs": "Pollo", "nameEn": "Chicken", "price": "", "options": [] },
+        { "nameEs": "Cochinita", "nameEn": "Cochinita (Achiote Pulled Pork)", "price": "", "options": [] },
+        { "nameEs": "Asada", "nameEn": "Asada (Grilled Steak)", "price": "", "options": [] },
+        { "nameEs": "Lengua", "nameEn": "Lengua (Beef Tongue)", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "sides",
+      "nameEs": "Acompañantes",
+      "nameEn": "Sides",
+      "noteEs": "",
+      "noteEn": "",
+      "items": [
+        { "nameEs": "Arroz", "nameEn": "Rice", "price": "", "options": [] },
+        { "nameEs": "Frijol", "nameEn": "Beans", "price": "", "options": [] },
+        { "nameEs": "Chiles Toreados", "nameEn": "Chiles Toreados (Blistered Chiles)", "price": "", "options": [] },
+        { "nameEs": "Pan Francés", "nameEn": "French Toast", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "soups",
+      "nameEs": "Sopas",
+      "nameEn": "Soups",
+      "noteEs": "",
+      "noteEn": "",
+      "items": [
+        { "nameEs": "Pozole", "nameEn": "Pozole", "descriptionEs": "Caldo tradicional de maíz pozolero.", "descriptionEn": "Traditional hominy stew.", "price": "", "options": [] },
+        { "nameEs": "Menudo", "nameEn": "Menudo", "descriptionEs": "Caldo de pancita de res.", "descriptionEn": "Traditional beef tripe soup.", "price": "", "options": [] },
+        { "nameEs": "Sopa de mariscos", "nameEn": "Seafood Soup", "descriptionEs": "De camarón, pescado o ambos.", "descriptionEn": "Shrimp, fish, or both.", "price": "", "options": ["Shrimp / Camarón", "Fish / Pescado", "Both / Ambos"] },
+        { "nameEs": "Birria", "nameEn": "Birria", "descriptionEs": "Caldo de birria.", "descriptionEn": "Birria consommé.", "price": "", "options": [] }
+      ]
+    },
+    {
+      "id": "tamales",
+      "nameEs": "Tamales",
+      "nameEn": "Tamales",
+      "noteEs": "Precios: 1 tamal - $3 / 1/2 docena - $16 / 1 docena - $28",
+      "noteEn": "Prices: 1 tamale - $3 / 1/2 dozen - $16 / 1 dozen - $28",
+      "items": [
+        { "nameEs": "Puerco en salsa Roja", "nameEn": "Pork with Red Sauce", "price": "$3", "options": ["1 tamale - $3", "1/2 dozen - $16", "1 dozen - $28"] },
+        { "nameEs": "Pollo en salsa Verde", "nameEn": "Chicken with Green Sauce", "price": "$3", "options": ["1 tamale - $3", "1/2 dozen - $16", "1 dozen - $28"] },
+        { "nameEs": "Raja de jalepeño con Queso", "nameEn": "Cheese with Jalapeño", "price": "$3", "options": ["1 tamale - $3", "1/2 dozen - $16", "1 dozen - $28"] },
+        { "nameEs": "Dulce con Fresa", "nameEn": "Strawberry", "descriptionEs": "Tamal dulce de fresa.", "descriptionEn": "Sweet strawberry tamale.", "price": "$3", "options": ["1 tamale - $3", "1/2 dozen - $16", "1 dozen - $28"] },
+        { "nameEs": "Dulce con Piña", "nameEn": "Pineapple", "descriptionEs": "Tamal dulce de piña.", "descriptionEn": "Sweet pineapple tamale.", "price": "$3", "options": ["1 tamale - $3", "1/2 dozen - $16", "1 dozen - $28"] }
+      ]
+    },
+    {
+      "id": "gorditas",
+      "nameEs": "Especial del ___ gorditas",
+      "nameEn": "Gorditas Special",
+      "noteEs": "Una palabra está tachada en el pizarrón: \"Especial del [tachado] gorditas\".",
+      "noteEn": "One word is scribbled out on the board: \"Especial del [crossed out] gorditas\". No prices listed.",
+      "items": [
+        { "nameEs": "Gorditas", "nameEn": "Gorditas", "descriptionEs": "Gorditas rellenas al gusto.", "descriptionEn": "Thick corn masa pockets stuffed with your choice of filling.", "price": "", "options": ["Asada", "Raja (Roasted Pepper Strips)", "Puerco (Pork)", "Molida (Ground Beef)", "Chorizo", "Chicharrón (Pork Rinds)", "Nopales (Cactus)"], "uncertain": true }
+      ]
+    },
+    {
+      "id": "saturday-special",
+      "nameEs": "Sábados",
+      "nameEn": "Saturdays",
+      "noteEs": "Nota escrita a mano: \"Menudo Rojo p/ Sabados\".",
+      "noteEn": "Handwritten note: red menudo on Saturdays.",
+      "items": [
+        { "nameEs": "Menudo Rojo", "nameEn": "Red Menudo", "descriptionEs": "Menudo rojo, los sábados.", "descriptionEn": "Red-chile beef tripe soup, served Saturdays.", "price": "", "options": [], "uncertain": true }
+      ]
+    }
+  ],
+  "extraInfo": [],
+  "readabilityNotes": "The main board (Breakfast / Lunch & Dinner) lists no prices except for breakfast tamales. The breakfast tamale 12 pc price was overwritten on the board and reads as 20.00 or 28.00. The tamales board clearly shows 1 dozen - $28, so $28.00 is used and the item is marked uncertain. Faded, erased ghost text ('Quesadillas ... (Chicken)') under Quesadillas Sincronizadas was ignored. On the tamales board, one word in 'Especial del ___ gorditas' is scribbled out. 'Raja de jalepeño' is spelled that way on the board. 'Menudo Rojo p/ Sabados' is an informal handwritten note. Neither board shows a phone number, address or hours. The main board is written mostly in English, so its nameEs values are Spanish translations; nameEs is verbatim only where the board itself is in Spanish."
+}

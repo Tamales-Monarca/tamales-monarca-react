@@ -1,20 +1,17 @@
 {
-	"name": "Tamales Monarca",
-	"short_name": "Tamales",
+	"name": "Restaurante El Monarca",
+	"short_name": "El Monarca",
+	"description": "Family-owned Mexican restaurant in Emporia, Kansas: handmade tamales, breakfast all day, tacos, tortas and more.",
+	"lang": "en",
 	"start_url": "/",
+	"scope": "/",
 	"display": "standalone",
-	"background_color": "#ffffff",
-	"theme_color": "#f97316",
+	"background_color": "#FBF7F0",
+	"theme_color": "#E8913A",
 	"icons": [
-		{
-			"src": "/android-chrome-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/android-chrome-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
+		{ "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+		{ "src": "/icon-maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+		{ "src": "/logo-mark.svg", "sizes": "any", "type": "image/svg+xml" }
 	]
 }
