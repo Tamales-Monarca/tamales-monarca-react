@@ -270,10 +270,12 @@ export const menu: MenuCategory[] = [
 			{
 				id: "pozole",
 				name: L("Pozole"),
+				availability: L("Every day", "Todos los días"),
 			},
 			{
 				id: "menudo",
 				name: L("Menudo"),
+				availability: L("Every day", "Todos los días"),
 			},
 			{
 				id: "sopa-de-mariscos",
@@ -320,11 +322,6 @@ export const menu: MenuCategory[] = [
 					L("Nopales (cactus)", "Nopales"),
 				],
 				availability: L("Special", "Especial"),
-			},
-			{
-				id: "menudo-rojo",
-				name: L("Red Menudo", "Menudo Rojo"),
-				availability: L("Saturdays only", "Solo los sábados"),
 			},
 		],
 	},

@@ -128,7 +128,6 @@ export const site = {
 	hoursNotes: [
 		L("Closed Mondays", "Cerrado los lunes"),
 		L("Breakfast served all day", "Desayuno todo el día"),
-		L("Red menudo on Saturdays", "Menudo rojo los sábados"),
 	],
 
 	links: {
