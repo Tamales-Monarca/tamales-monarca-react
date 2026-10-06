@@ -29,6 +29,8 @@ export type OpenStatus =
 			/** Next opening time, if any hours are configured. */
 			opens?: string;
 			when?: "today" | "tomorrow" | "later";
+			/** Weekday of the next opening. */
+			opensDay?: DayOfWeek;
 	  };
 
 export function toMinutes(hhmm: string) {
@@ -91,13 +93,15 @@ export function getOpenStatus(date: Date): OpenStatus {
 		};
 	}
 	for (let offset = 1; offset <= 7; offset++) {
-		const next = hoursForDay(DAYS[(dayIndex + offset) % 7])[0];
+		const nextDay = DAYS[(dayIndex + offset) % 7];
+		const next = hoursForDay(nextDay)[0];
 		if (next) {
 			return {
 				state: "closed",
 				today: day,
 				opens: next.opens,
 				when: offset === 1 ? "tomorrow" : "later",
+				opensDay: nextDay,
 			};
 		}
 	}

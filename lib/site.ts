@@ -96,23 +96,37 @@ export const site = {
 
 	hours: [
 		{
-			days: [
-				"Monday",
-				"Tuesday",
-				"Wednesday",
-				"Thursday",
-				"Friday",
-				"Saturday",
-				"Sunday",
-			],
+			days: ["Tuesday"],
+			opens: "09:00",
+			closes: "19:00",
+			label: L("Tuesday", "Martes"),
+			time: L("9 AM – 7 PM", "9 a. m. – 7 p. m."),
+		},
+		{
+			days: ["Wednesday", "Thursday", "Friday"],
 			opens: "08:00",
-			closes: "20:00",
-			label: L("Monday – Sunday", "Lunes – Domingo"),
-			time: L("8 AM – 8 PM", "8 a. m. – 8 p. m."),
+			closes: "19:00",
+			label: L("Wednesday – Friday", "Miércoles – Viernes"),
+			time: L("8 AM – 7 PM", "8 a. m. – 7 p. m."),
+		},
+		{
+			days: ["Saturday"],
+			opens: "07:00",
+			closes: "19:00",
+			label: L("Saturday", "Sábado"),
+			time: L("7 AM – 7 PM", "7 a. m. – 7 p. m."),
+		},
+		{
+			days: ["Sunday"],
+			opens: "07:00",
+			closes: "16:00",
+			label: L("Sunday", "Domingo"),
+			time: L("7 AM – 4 PM", "7 a. m. – 4 p. m."),
 		},
 	] satisfies OpeningHours[],
 
 	hoursNotes: [
+		L("Closed Mondays", "Cerrado los lunes"),
 		L("Breakfast served all day", "Desayuno todo el día"),
 		L("Red menudo on Saturdays", "Menudo rojo los sábados"),
 	],
